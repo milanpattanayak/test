@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Bootstrap Example</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <style>
+      .container-fluid {
+        padding: 30px;
+      }
+      .dark-color {
+        background-color: #dedeed;
+      }
+      .borderRemove {
+        border: none;
+      }
+      .profilepic {
+        margin-bottom: 36px;
+      }
+      .nav-link {
+        color: black;
+      }
+      .card {
+        background-color: #3b2ce3;
+        color: #dedeed;
+      }
+      .btn-custom {
+        color: #775abb;
+        background-color: #dedeed;
+        border-color: #dedeed;
+      }
+      .txt-col {
+        color: #775abb;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-sm-4 dark-color">
+          <!-- start of side bar top menus -->
+          <div class="d-flex flex-column flex-shrink-0 p-3">
+            <ul class="nav nav-pills flex-column mb-auto">
+              <li class="profilepic">
+                <div class="row">
+                  <div class="col-md-3">
+                    <img
+                      src="https://github.com/mdo.png"
+                      alt=""
+                      width="64"
+                      height="64"
+                      class="rounded-circle me-2"
+                    />
+                  </div>
+                  <div class="col-md-9">
+                    <p class="mt-1 mb-0">Ildiko Gaspar</p>
+                    <p class="mt-1 mb-0">ildikogaspar@email.com</p>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item">
+                <a
+                  href="#"
+                  class="nav-link active bg-light text-dark"
+                  aria-current="page"
+                >
+                  <span class="fa fa-clock-o" aria-hidden="true"></span> Recent
+                  Files
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <span class="fa fa-file-o" aria-hidden="true"></span>
+                  Documents
+                </a>
+              </li>
+              <li>
+                <a href="#" class="nav-link link-dark">
+                  <span class="fa fa-film" aria-hidden="true"></span> Videos
+                </a>
+              </li>
+            </ul>
+          </div>
+          <!-- end of sidebar menu -->
+          <!-- start of card  -->
+          <div class="card" style="text-align: center">
+            <div class="card-body">
+              <h5 class="card-title">
+                <span class="fa fa-star" aria-hidden="true"></span>
+              </h5>
+              <h6 class="card-subtitle mb-2">Upgrade to PRO</h6>
+              <p class="card-text">
+                Unlock features like collaboration and unlimited storage.
+              </p>
+              <a href="#" class="btn btn-custom" role="button" color:#774abb;
+                >Upgrade account</a
+              >
+            </div>
+          </div>
+          <!-- end of card  -->
+          <!-- start of  sidebar footer -->
+          <div class="row mt-5">
+            <div class="col-sm-3"><span class="txt-col">Edit menu</span></div>
+            <div class="col-sm-7"></div>
+            <div class="col-sm-2"><span class="txt-col">Help</span></div>
+          </div>
+
+          <!-- end of sidebar footer -->
+        </div>
+        <div class="col-sm-8">
+          <nav class="navbar navbar-expand-lg navbar-light">
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <form class="form-inline my-2 my-lg-0">
+                <i class="fa fa-search"></i>
+
+                <input
+                  class="form-control mr-sm-2 borderRemove"
+                  type="search"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+              </form>
+              <ul class="navbar-nav ml-auto">
+                <li class="nav-item dropdown">
+                  <a
+                    class="nav-link dropdown-toggle"
+                    href="#"
+                    id="navbarDropdown"
+                    role="button"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false"
+                  >
+                    Last modified
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Action</a>
+                    <a class="dropdown-item" href="#">Another action</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+          <hr />
+          <div class="tableList">
+            <table class="table table-borderless">
+              <thead>
+                <tr>
+                  <th scope="col">NAME</th>
+                  <th scope="col">LAST MODIFIED</th>
+                  <th scope="col">KIND</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Day 1333 App Dashboard UI Design</td>
+                  <td>Just now</td>
+                  <td>InVision Studio</td>
+                </tr>
+                <tr>
+                  <td>Norske verb A</td>
+                  <td>3hours ago</td>
+                  <td>PDF Document</td>
+                </tr>
+                <tr>
+                  <td>Medlemskart</td>
+                  <td>Yesterday</td>
+                  <td>SVG</td>
+                </tr>
+                <tr>
+                  <td>plus_icon</td>
+                  <td>Yesterday</td>
+                  <td>SVG</td>
+                </tr>
+                <tr class="dark-color">
+                  <td>Day 1393 Checkout UI Components</td>
+                  <td>Last Month</td>
+                  <td>PNG image</td>
+                </tr>
+                <tr>
+                  <td>City</td>
+                  <td>Last month</td>
+                  <td>SVG</td>
+                </tr>
+                <tr>
+                  <td>TexturePack</td>
+                  <td>2 months ago</td>
+                  <td>Adobe Illustrator Do...</td>
+                </tr>
+                <tr>
+                  <td>UI Kit 1</td>
+                  <td>2 months ago</td>
+                  <td>Sketch Document</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
